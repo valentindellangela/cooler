@@ -22,4 +22,9 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app->get('/test', function() use($app) {
+	return "HI!";
+});
+
+
 $app->run();
